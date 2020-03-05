@@ -96,7 +96,7 @@ header .brand-name a{
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
-    color: #fff;
+    color: #000000;
     text-transform: uppercase;
     position: relative;
 
@@ -122,10 +122,10 @@ header .navbar ul li {
 }
 
 header .navbar ul li a{
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     line-height: 72px;
-    color: #ffffff;
+    color: #000;
     display: block;
     font-weight: 600;
     position: relative;
@@ -165,7 +165,9 @@ header .navbar ul li a.active::before {
 /* Home Section */
 .home{
     min-height: 100vh;
-    background-image: url("Images/Home-page.jpg");
+
+    background-image: url("Images/web.jpg");
+    background-color: rgba (0,0,0,0.5);
     background-size: cover;
     background-position: center;
 }
@@ -183,12 +185,15 @@ header .navbar ul li a.active::before {
 
 .home .home-content .block {
     
-    flex: 0 0 75%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex: 0 0 62%;
     max-width: 75%;
     padding-left: 35px;
-    border-left: 5px solid #fff;
-    margin-top: 13%;
-    margin-left: 12%;
+    border: 5px solid #fff;
+    margin-top: 26%;
+    margin-left: 20%;
+    padding: 2%;
+    border-radius: 6px;
     
 }
 
@@ -1003,6 +1008,10 @@ footer .social a:hover{
     }
 }
 @media(max-width: 500px){
+    .home{
+        background-image: url("Images/Background-img.jpg");
+    }
+
     .home .home-content .block h1{
         font-size: 30px;
         transition:all .5s ease-in;  
